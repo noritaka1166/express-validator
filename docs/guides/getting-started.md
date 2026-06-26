@@ -11,7 +11,7 @@ So let's roll the sleeves up and get some coding happening.
 
 ## Set up
 
-The first thing that one needs is a express.js application running.
+The first thing that one needs is an express.js application running.
 Let's implement one that says hi to someone; for this, create a new file using your favorite language
 and add the following code:
 
@@ -210,7 +210,7 @@ While this example is fine, an attacker could change the `person` query string t
 which loads its own JavaScript that could be harmful.
 
 In this scenario, one way to mitigate the issue with express-validator is to use a **sanitizer**,
-most specifically `escape`, which transforms special HTML characters with others that can be represented
+most specifically `escape`, which transforms special HTML characters into others that can be represented
 as text.
 
 <Tabs groupId="lang">
