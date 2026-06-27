@@ -162,7 +162,7 @@ For example, [custom validators, sanitizers](#custom-validators-and-sanitizers),
 ```ts
 import { ExpressValidator } from 'express-validator';
 
-const { body, validationResult } = new ExpressValidator(
+const { body, param, validationResult } = new ExpressValidator(
   {
     isPostID: async value => {
       // Verify if the value matches the post ID format
