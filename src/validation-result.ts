@@ -14,7 +14,6 @@ type ToArrayOptions = {
   onlyFirstError?: boolean;
 };
 
-// eslint-disable-next-line no-use-before-define
 export type ResultFactory<T> = (req: Request) => Result<T>;
 
 interface ResultFactoryBuilderOptions<T = any> {

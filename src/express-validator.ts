@@ -72,7 +72,6 @@ export type ParamSchemaWithExtensions<
       never;
 };
 
-/* eslint-disable no-use-before-define */
 /**
  * Type of a validation chain created by a custom ExpressValidator instance.
  *
@@ -103,7 +102,6 @@ export type CustomSchema<
 > = T extends ExpressValidator<infer V, infer S, any>
   ? Record<string, ParamSchemaWithExtensions<Extract<keyof V, string>, Extract<keyof S, string>, K>>
   : never;
-/* eslint-enable no-use-before-define */
 
 export class ExpressValidator<
   V extends CustomValidatorsMap = {},

@@ -15,7 +15,7 @@ export class CustomCondition implements ContextItem {
         // the error thrown here is symbolic, it will be re-thrown in the catch clause anyway.
         throw new Error();
       }
-    } catch (e) {
+    } catch {
       throw new ValidationHalt();
     }
   }
